@@ -91,13 +91,13 @@
             </div>
         </div>
         <div class="product-grid">
-            <!-- Первый ряд (повторите этот блок 4 раза) -->
+            
             <div class="product-card">
                 <div class="product-image">
                     <img src="img/4.jpg" alt="#">
                 </div>
                 <h3 class="product-title">Щавель "Отборный"</h3>
-                <p class="product-description">Описа��ие товара</p>
+                <p class="product-description">Описание товара</p>
                 <div class="product-price">
                     <span class="price">60₽</span>
                 </div>
@@ -123,7 +123,7 @@
                     <img src="img/6.jpg" alt="Зеленая кожаная сумка">
                 </div>
                 <h3 class="product-title">Капуста "Скромная"</h3>
-                <p class="product-description">Описание товар��</p>
+                <p class="product-description">Описание товара</p>
                 <div class="product-price">
                     <span class="price">20₽</span>
                 </div>
@@ -131,13 +131,13 @@
             </div>
         </div>
         <div class="product-grid">
-            <!-- Первый ряд (повторите этот блок 4 раза) -->
+
             <div class="product-card">
                 <div class="product-image">
                     <img src="img/7.jpg" alt="Синяя кожаная сумка">
                 </div>
                 <h3 class="product-title">Петрушка "Зеленая"</h3>
-                <p class="product-description">Описа��ие товара</p>
+                <p class="product-description">Описание товара</p>
                 <div class="product-price">
                     <span class="price">24₽</span>
                 </div>
@@ -163,7 +163,7 @@
                     <img src="img/9.jpg" alt="Зеленая кожаная сумка">
                 </div>
                 <h3 class="product-title">Помидор "Роман"</h3>
-                <p class="product-description">Описание товар��</p>
+                <p class="product-description">Описание товара</p>
                 <div class="product-price">
                     <span class="price">55₽</span>
                 </div>
@@ -172,35 +172,6 @@
         </div>
     </main>
 
-    <script>
-        // Корзина
-        const cartButton = document.getElementById('cartButton');
-        const cartModal = document.getElementById('cartModal');
-        const closeCart = document.getElementById('closeCart');
-
-        cartButton.addEventListener('click', () => {
-            cartModal.classList.remove('hidden');
-            setTimeout(() => {
-                cartModal.classList.add('active');
-            }, 10);
-        });
-
-        closeCart.addEventListener('click', () => {
-            cartModal.classList.remove('active');
-            setTimeout(() => {
-                cartModal.classList.add('hidden');
-            }, 300);
-        });
-
-        // Закрытие корзины при клике вне её
-        document.addEventListener('click', (e) => {
-            if (!cartModal.contains(e.target) && !cartButton.contains(e.target) && cartModal.classList.contains('active')) {
-                cartModal.classList.remove('active');
-                setTimeout(() => {
-                    cartModal.classList.add('hidden');
-                }, 300);
-            }
-        });
     </script>
     <footer class="footer">
         <div class="footer-content">
